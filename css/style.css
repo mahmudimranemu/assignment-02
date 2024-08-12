@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* font-family: "Inter", sans-serif;
+font-family: "Grey Qo", cursive; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --primary-color: #e6533c;
+  --secondary-color: #222222;
+  --color-white: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.btn {
+  padding: 16px 40px;
+  border-radius: 42px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  border: 1px solid var(--color-white);
+}
+
+.btn-group {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0.9),
+      rgba(43, 43, 43, 0.7)
+    ),
+    url("../img/hero-bg.jpg") no-repeat;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+nav.main-menu ul {
+  display: flex;
+  border: 1px solid #ffffff1f;
+  padding: 12px 0;
+  border-radius: 46px;
+}
+
+nav.main-menu ul li {
+  padding: 0 5px;
+}
+
+nav.main-menu ul li a {
+  padding: 8px 20px;
+  border-radius: 46px;
+}
+
+nav.main-menu ul li a:hover,
+.active {
+  background-color: var(--primary-color);
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-title {
+  font-size: 78px;
+  color: var(--color-white);
+  line-height: 78px;
+  font-weight: 900;
+}
+
+.hero-title span {
+  font-family: "Grey Qo", cursive;
+  font-size: 100px;
+  color: var(--primary-color);
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  height: 850px;
+}
+
+.info-box {
+  padding: 20px;
+  background-color: rgba(48, 48, 48, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.info-box h2 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--color-white);
+}
+
+.info-box h3 {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--color-white);
+}
+
+.info-box-top {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+.info-box-bottom {
+  position: absolute;
+  bottom: 70px;
+}
