@@ -19,6 +19,7 @@ font-family: "Grey Qo", cursive; */
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: black;
 }
 
 ul,
@@ -33,6 +34,26 @@ a {
 
 p {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.mt-8 {
+  margin-top: 80px;
 }
 
 .container {
@@ -61,6 +82,21 @@ p {
   gap: 20px;
 }
 
+.section-heading {
+  color: var(--color-white);
+  gap: 10px;
+}
+
+.section-heading h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.section-heading p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -68,7 +104,7 @@ p {
   background: linear-gradient(
       to bottom,
       rgba(17, 17, 17, 0.9),
-      rgba(43, 43, 43, 0.7)
+      rgba(43, 43, 43, 0.8)
     ),
     url("../img/hero-bg.jpg") no-repeat;
 }
@@ -76,6 +112,7 @@ p {
 header {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 20px 0;
 }
@@ -169,4 +206,75 @@ nav.main-menu ul li a:hover,
 .info-box-bottom {
   position: absolute;
   bottom: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-box {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Habit section */
+.habits {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-top: 58px;
+}
+
+.habits .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.habits .item img {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+
+.habits .item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.habits .item p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* cta-1 section */
+
+.cta-1-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+  padding: 40px 54px;
+  border-radius: 18px;
+}
+
+.cta-1-content a {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.cta-1-content img {
+  width: 400px;
+  border-radius: 18px;
 }
