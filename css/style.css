@@ -278,3 +278,69 @@ nav.main-menu ul li a:hover,
   width: 400px;
   border-radius: 18px;
 }
+
+/* Training section */
+
+.grid-item-1 {
+  grid-area: training1;
+}
+.grid-item-1 p {
+  color: black !important;
+}
+.grid-item-2 {
+  grid-area: training2;
+}
+.grid-item-3 {
+  grid-area: training3;
+}
+
+.grid-item-4 {
+  grid-area: training4;
+}
+
+.grid-item-5 {
+  grid-area: training5;
+}
+
+.grid-item-6 {
+  grid-area: training6;
+}
+.grid-item {
+  position: relative;
+}
+.grid-item p {
+  position: absolute;
+}
+.grid-item-4 p {
+  right: 0;
+}
+
+.grid-item-3 p,
+.grid-item-1 p,
+.grid-item-5 p,
+.grid-item-6 p {
+  bottom: 0;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.training-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas:
+    "training1 training2 training2 training2 training2 training2 training2 training2 training2 training2 training2 training3"
+    "training4 training4 training4 training4 training4 training4 training5 training6 training6 training6 training6 training6";
+}
+
+.training-grid > div {
+  height: 200px;
+}
+
+.training-grid p {
+  color: var(--color-white);
+  padding: 10px;
+  margin-bottom: 20px;
+}
