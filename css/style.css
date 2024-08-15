@@ -309,6 +309,9 @@ nav.main-menu ul li a:hover,
 }
 .grid-item p {
   position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
 }
 .grid-item-4 p {
   right: 0;
@@ -533,7 +536,7 @@ ul.footer-menu li a {
 
 /* Responsive */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   header {
     padding: 10px;
   }
@@ -545,6 +548,9 @@ ul.footer-menu li a {
   }
   .main-menu {
     display: none;
+  }
+  .btn-group {
+    flex-direction: column;
   }
 
   #hero {
@@ -584,7 +590,7 @@ ul.footer-menu li a {
   }
   .info-box-top {
     top: 15%;
-    right: 25%;
+    right: 15%;
   }
   .info-box-bottom {
     bottom: 20%;
@@ -630,8 +636,13 @@ ul.footer-menu li a {
     width: 100%;
   }
   .training-mobile {
-    display: grid;
-    grid-template-columns: 150px 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-item {
+    width: 100%;
+    height: 200px;
+    background-color: #e6533c;
     overflow: hidden;
   }
   .training-grid {
@@ -640,7 +651,14 @@ ul.footer-menu li a {
 
   .grid-item img {
     width: auto;
-    height: auto;
+    height: 100%;
+  }
+
+  .grid-item:nth-child(2) img {
+    float: right;
+  }
+  .training-mobile .flex:nth-child(2) .grid-item:nth-child(2) img {
+    float: left;
   }
 
   #bmi .section-heading {
